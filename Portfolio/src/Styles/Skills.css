@@ -1,0 +1,14 @@
+.skills span {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #38bdf8, #6366f1);
+}
+button {
+    padding: 12px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #38bdf8, #6366f1);
+    color: white;
+    border: none;
+}
