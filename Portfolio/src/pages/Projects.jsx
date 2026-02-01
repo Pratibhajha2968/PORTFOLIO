@@ -1,26 +1,17 @@
-import React from 'react'
+import React from "react";
 import "../Styles/Projects.css";
 
-const Projects = () => {
-  const data = [
-    { title: "Job Portal", tech: "React + Spring Boot" },
-    { title: "E-Commerce", tech: "MERN Stack" },
-    { title: "Portfolio", tech: "React" },
-  ];
+export default function Projects() {
+  const data = ["Job Portal", "E-Commerce", "Portfolio"];
 
   return (
     <section>
       <h2>Projects</h2>
       <div className="grid">
-        {data.map((p, i) => (
-          <div className="card" key={i}>
-            <h3>{p.title}</h3>
-            <p>{p.tech}</p>
-          </div>
+        {data.map((p,i) => (
+          <div className="card" key={i}>{p}</div>
         ))}
       </div>
     </section>
   );
-};
-
-export default Projects;
+}

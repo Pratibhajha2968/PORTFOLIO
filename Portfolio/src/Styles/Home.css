@@ -1,31 +1,10 @@
 .home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.home h1 {
-    font-size: 60px;
+    min-height: 100vh;
+    padding: 100px 10%;
 }
 
 .home span {
     background: linear-gradient(90deg, #38bdf8, #6366f1);
-    /* -webkit-background-clip: text; */
-    /* -webkit-text-fill-color: transparent; */
-}
-
-.cta a {
-    margin-right: 15px;
-    padding: 12px 24px;
-    border-radius: 25px;
-    text-decoration: none;
-    background: linear-gradient(45deg, #38bdf8, #6366f1);
-    color: white;
-}
-button {
-    padding: 12px;
-    border-radius: 20px;
-    background: linear-gradient(45deg, #38bdf8, #6366f1);
-    color: white;
-    border: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

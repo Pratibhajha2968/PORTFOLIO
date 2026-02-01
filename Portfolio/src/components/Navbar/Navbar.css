@@ -1,4 +1,23 @@
-.Navbar{
-    flex-direction: row;
-    
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.7);
+    /* backdrop-filter: blur(10px); */
+    z-index: 100;
+}
+
+.links a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    background: linear-gradient(45deg, #38bdf8, #6366f1);
+    padding: 6px 14px;
+    border-radius: 10px;
 }

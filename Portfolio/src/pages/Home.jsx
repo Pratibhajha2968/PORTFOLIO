@@ -1,20 +1,10 @@
-import React from 'react'
 import "../Styles/Home.css";
 
-const Home = () => {
+export default function Home() {
   return (
-     <section className="home">
-      <h1>
-        Hi, I'm <span>Pratibha Jha</span>
-      </h1>
-      <p>Java Full Stack Developer | MERN Stack</p>
-      <br /><br /><br />
-      <div className="cta">
-        <a href="/projects">View Projects</a>
-        <a href="/contact">Hire Me</a>
-      </div>
+    <section className="home">
+      <h1>Hi, I'm <span>Pratibha</span></h1>
+      <p>Full Stack MERN Developer</p>
     </section>
-  )
+  );
 }
-
-export default Home
