@@ -23,7 +23,7 @@ export default function ProjectDetails() {
       title: "CRUD Operation",
       description:
         "A full stack CRUD application for managing users with add, update, delete and view features.",
-      tech: "React, MongoDB , Express.js , Node.js",
+      tech: "React, MongoDB , Express.js , Node.js , Postman , Vscode",
       features: [
         "Add User",
         "Update User",
@@ -36,7 +36,7 @@ export default function ProjectDetails() {
       title: "Portfolio",
       description:
         "My personal developer portfolio showcasing projects, skills and resume.",
-      tech: "React, CSS",
+      tech: "React, CSS , Javascript , HTML , Vscode , Git , Github",
       features: [
         "Responsive Design",
         "Project Showcase",
