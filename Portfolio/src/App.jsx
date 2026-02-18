@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Contacts from "./pages/Contacts";
+import ProjectDetails from "./pages/ProjectsDetails";
 
 export default function App() {
   return (

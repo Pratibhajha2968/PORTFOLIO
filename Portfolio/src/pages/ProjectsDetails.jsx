@@ -8,7 +8,7 @@ export default function ProjectDetails() {
   const projects = {
     "job-portal": {
       title: "Job Portal",
-      description:
+      description: 
         "A Full-stack job portal where users can register, login, apply for jobs and recruiters can post jobs.",
       tech: "React, HTML/CSS , Javascript , Java , Springboot , MySQL , Git , Github , Vscode , Eclipse",
       features: [
