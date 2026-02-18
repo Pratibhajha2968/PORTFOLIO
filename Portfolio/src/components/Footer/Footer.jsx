@@ -1,9 +1,7 @@
-import "./Footer.css";
-
 export default function Footer() {
   return (
-    <div className="footer">
-      © 2026 Pratibha Jha | Built with React
-    </div>
+    <footer className="footer">
+      <p>© 2026 My Portfolio. All rights reserved.</p>
+    </footer>
   );
 }
