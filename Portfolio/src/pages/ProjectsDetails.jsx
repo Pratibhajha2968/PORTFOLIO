@@ -9,8 +9,8 @@ export default function ProjectDetails() {
     "job-portal": {
       title: "Job Portal",
       description:
-        "A MERN stack job portal where users can register, login, apply for jobs and recruiters can post jobs.",
-      tech: "React, Node.js, Express, MongoDB",
+        "A Full-stack job portal where users can register, login, apply for jobs and recruiters can post jobs.",
+      tech: "React, HTML/CSS , Javascript , Java , Springboot , MySQL , Git , Github , Vscode , Eclipse",
       features: [
         "User Authentication",
         "Job Posting",
