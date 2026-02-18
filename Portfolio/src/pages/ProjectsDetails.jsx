@@ -23,7 +23,7 @@ export default function ProjectDetails() {
       title: "CRUD Operation",
       description:
         "A full stack CRUD application for managing users with add, update, delete and view features.",
-      tech: "React, Spring Boot, MySQL",
+      tech: "React, MongoDB , Express.js , Node.js",
       features: [
         "Add User",
         "Update User",
