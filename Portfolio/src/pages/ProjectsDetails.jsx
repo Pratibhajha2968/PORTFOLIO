@@ -1,82 +1,35 @@
-import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 export default function ProjectDetails() {
   const { id } = useParams();
-  const navigate = useNavigate();
 
-  const projects = {
+  const projectData = {
     "job-portal": {
       title: "Job Portal",
-      description: 
-        "A Full-stack job portal where users can register, login, apply for jobs and recruiters can post jobs.",
-      tech: "React, HTML/CSS , Javascript , Java , Springboot , MySQL , Git , Github , Vscode , Eclipse",
-      features: [
-        "User Authentication",
-        "Job Posting",
-        "Job Search",
-        "Apply for jobs"
-      ]
+      desc: "Full stack job portal using Java Full-stack."
     },
-
     "crud-app": {
       title: "CRUD Operation",
-      description:
-        "A full stack CRUD application for managing users with add, update, delete and view features.",
-      tech: "React, MongoDB , Express.js , Node.js , Postman , Vscode",
-      features: [
-        "Add User",
-        "Update User",
-        "Delete User",
-        "View All Users"
-      ]
+      desc: "User management CRUD app using MERN stack."
     },
-
     "portfolio": {
-      title: "Portfolio",
-      description:
-        "My personal developer portfolio showcasing projects, skills and resume.",
-      tech: "React, CSS , Javascript , HTML , Vscode , Git , Github",
-      features: [
-        "Responsive Design",
-        "Project Showcase",
-        "Contact Form"
-      ]
+      title: "Portfolio Website",
+      desc: "Personal responsive portfolio built with React."
     },
-
-    "login-system": {
+    "auth-system": {
       title: "Login & Register System",
-      description:
-        "Authentication system with secure login and registration using JWT.",
-      tech: "React, Node.js, MongoDB",
-      features: [
-        "JWT Authentication",
-        "Password Encryption",
-        "Protected Routes"
-      ]
+      desc: "Authentication system using JWT."
     }
   };
 
-  const project = projects[id];
+  const project = projectData[id];
 
   if (!project) return <h2>Project Not Found</h2>;
 
   return (
-    <div style={{ padding: "30px" }}>
-      <button onClick={() => navigate(-1)}>⬅ Back</button>
-
+    <div className="page">
       <h1>{project.title}</h1>
-      <p>{project.description}</p>
-
-      <h3>Tech Stack</h3>
-      <p>{project.tech}</p>
-
-      <h3>Features</h3>
-      <ul>
-        {project.features.map((f, i) => (
-          <li key={i}>{f}</li>
-        ))}
-      </ul>
+      <p>{project.desc}</p>
     </div>
   );
 }

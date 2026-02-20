@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../Styles/Projects.css";
 
@@ -6,31 +5,15 @@ export default function Projects() {
   const navigate = useNavigate();
 
   const projects = [
-    {
-      id: "job-portal",
-      title: "Job Portal",
-      shortDesc: "A full stack job portal application"
-    },
-    {
-      id: "crud-app",
-      title: "CRUD Operation",
-      shortDesc: "Create, Read, Update, Delete operations"
-    },
-    {
-      id: "portfolio",
-      title: "Portfolio",
-      shortDesc: "Personal portfolio website"
-    },
-    {
-      id: "login-system",
-      title: "Login And Register",
-      shortDesc: "Authentication system with JWT"
-    }
+    { id: "job-portal", title: "Job Portal" },
+    { id: "crud-app", title: "CRUD Operation" },
+    { id: "portfolio", title: "Portfolio Website" },
+    { id: "auth-system", title: "Login & Register System" },
   ];
 
   return (
-    <section>
-      <h2>Projects</h2>
+    <div className="page">
+      <h1>My Projects</h1>
 
       <div className="grid">
         {projects.map((p) => (
@@ -39,13 +22,10 @@ export default function Projects() {
             className="card"
             onClick={() => navigate(`/project/${p.id}`)}
           >
-            <h3>{p.title}</h3>
-            <p>{p.shortDesc}</p>
+            {p.title}
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 }
-
-

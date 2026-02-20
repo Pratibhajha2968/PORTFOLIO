@@ -1,14 +1,14 @@
-import "../Styles/Skills.css";
-
 export default function Skills() {
-  const skills = ["React","Node","MongoDB","Express","Java"];
-
   return (
-    <section>
-      <h2>Skills</h2>
-      <div className="skills">
-        {skills.map((s,i) => <span key={i}>{s}</span>)}
-      </div>
-    </section>
+    <div className="page">
+      <h1>Skills</h1>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React</li>
+        <li>Java, Spring Boot</li>
+        <li>Node.js, Express</li>
+        <li>MongoDB, MySQL</li>
+      </ul>
+    </div>
   );
 }
